@@ -39,9 +39,14 @@ export const deleteMessageAPI = async (messageId: string) => {
 // Post Send Message
 export const postSendMessageAPI = async (
   messagePostprops: MessagePostPropsType,
+  isTestMode: boolean = true,
 ) => {
-  const response = await axiosInstance.post(`message`, messagePostprops);
-  return response.data;
+  if (isTestMode) {
+    alert(
+      "안내: 현재는 테스트 모드입니다.\n개인정보 보호를 위해 실제 고객에게는 메시지가 발송되지 않습니다.\n이 점 참고하시어 테스트를 진행해 주시기 바랍니다.",
+    );
+    return;
+  }
 };
 
 // 고객 통계
