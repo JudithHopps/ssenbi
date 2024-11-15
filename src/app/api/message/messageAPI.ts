@@ -35,6 +35,7 @@ export const deleteMessageAPI = async (messageId: string) => {
   return response.data;
 };
 
+// todo : message 작업 막기
 // Post Send Message
 export const postSendMessageAPI = async (
   messagePostprops: MessagePostPropsType,
