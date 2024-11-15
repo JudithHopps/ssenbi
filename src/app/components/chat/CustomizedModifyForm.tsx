@@ -60,7 +60,7 @@ export default function CustomizedModifyForm({
 
       const respose = await getCustomTemplateAPI({ token, templateId });
 
-      console.log(respose);
+      //console.log(respose);
     };
 
     fetchCustomTemplate(templateId);

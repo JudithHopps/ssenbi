@@ -75,7 +75,7 @@ export default function CustomizedIdPage({ params }: CustomizedIdPageProps) {
       setCustomMessageTemplate(data.result);
       setModifiedTemplate(data.result);
     } catch (error) {
-      console.error("Error fetching message:", error);
+      //console.error("Error fetching message:", error);
     }
   };
 
@@ -92,7 +92,7 @@ export default function CustomizedIdPage({ params }: CustomizedIdPageProps) {
         router.push("/customized");
       }
     } catch (error) {
-      console.error("Error deleting message:", error);
+      //console.error("Error deleting message:", error);
     }
   };
 
@@ -136,7 +136,7 @@ export default function CustomizedIdPage({ params }: CustomizedIdPageProps) {
 
     try {
       const response = await putCustomTemplateAPI(templateParams);
-      console.log("putCustomTemplateAPI response", response);
+      //console.log("putCustomTemplateAPI response", response);
 
       if (response.code === "S10000" && response.message === "SUCCESS") {
         handleSaveMessage();
@@ -145,7 +145,7 @@ export default function CustomizedIdPage({ params }: CustomizedIdPageProps) {
         displayEditWindow();
       }
     } catch (error) {
-      console.error("Error updating template:", error);
+      //console.error("Error updating template:", error);
     }
   };
 
@@ -260,7 +260,7 @@ export default function CustomizedIdPage({ params }: CustomizedIdPageProps) {
         ),
       });
 
-      console.log("handleSaveAsTemplate response", response);
+      //console.log("handleSaveAsTemplate response", response);
 
       displaySaveAsWindow();
 

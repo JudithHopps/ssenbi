@@ -10,7 +10,7 @@ export const getEveryMessagesAPI = async ({
   keyword,
   sort,
 }: GetEveryMessagesType) => {
-  console.log(keyword, sort);
+  //console.log(keyword, sort);
   const headers = token ? { Authorization: `Bearer ${token}` } : {};
 
   const response = await axiosInstance.get(`/message`, {

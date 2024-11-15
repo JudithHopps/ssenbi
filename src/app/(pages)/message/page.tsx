@@ -43,10 +43,10 @@ export default function MessagePage() {
         }
 
         const response = await getEveryMessagesAPI(params);
-        console.log("Fetched Message List:", response);
+        //console.log("Fetched Message List:", response);
         setMessageList(response.result);
       } catch (error) {
-        console.error("Error fetching messages:", error);
+        //console.error("Error fetching messages:", error);
       }
     };
     fetchMessageList();

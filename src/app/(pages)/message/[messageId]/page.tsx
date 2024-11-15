@@ -34,12 +34,12 @@ export default function MessageIdPage({ params }: MessageIdPageProps) {
     const fetchMessage = async () => {
       try {
         const data = await getMessageAPI(messageId);
-        console.log(data);
+        //console.log(data);
 
         // setMessageData(data.result);
         setMessageData(data.result);
       } catch (error) {
-        console.error("Error fetching message:", error);
+        //console.error("Error fetching message:", error);
       }
     };
 
@@ -57,7 +57,7 @@ export default function MessageIdPage({ params }: MessageIdPageProps) {
         router.push("/message");
       }
     } catch (error) {
-      console.error("Error deleting message:", error);
+      //console.error("Error deleting message:", error);
     }
   };
 

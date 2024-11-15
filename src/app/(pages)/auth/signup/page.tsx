@@ -99,7 +99,8 @@ export default function SignupPage() {
     setRequiredFieldErrors(newRequiredFieldErrors);
 
     if (Object.values(newRequiredFieldErrors).some((error) => error)) {
-      console.warn("Required fields missing");
+      //console.warn("Required fields missing");
+      alert("필수 요소를 모두 채워주세요!");
       return;
     }
 
@@ -109,14 +110,14 @@ export default function SignupPage() {
     }
 
     try {
-      console.log("Sending signup request with data:", {
-        memberId,
-        password,
-        name,
-        business,
-        personalPhoneNumber,
-        businessPhoneNumber,
-      });
+      //console.log("Sending signup request with data:", {
+      //   memberId,
+      //   password,
+      //   name,
+      //   business,
+      //   personalPhoneNumber,
+      //   businessPhoneNumber,
+      // });
 
       const signupData: SignupFormData = {
         memberId,
@@ -130,15 +131,15 @@ export default function SignupPage() {
       const isSuccess = await postSignupAPI(signupData);
 
       if (isSuccess) {
-        console.log("Signup successful, redirecting...");
+        //console.log("Signup successful, redirecting...");
         router.push("/auth/login");
       }
     } catch (error) {
       if (error instanceof Error) {
-        console.error("회원가입 실패:", error.message);
+        //console.error("회원가입 실패:", error.message);
         alert("회원가입에 실패했습니다. 다시 시도해주세요.");
       } else {
-        console.error("회원가입 실패: 알 수 없는 오류 발생");
+        //console.error("회원가입 실패: 알 수 없는 오류 발생");
       }
     }
   };

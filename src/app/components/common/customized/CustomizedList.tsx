@@ -43,7 +43,7 @@ export default function CustomizedList() {
       const data = await getCustomTemplatesAPI({
         sort: SORTOPTIONS[curSortOption],
       });
-      console.log("customized data", data);
+      //console.log("customized data", data);
       setTemplates(data.result);
     } finally {
       setIsLoading(false);
@@ -98,11 +98,11 @@ export default function CustomizedList() {
         isReplicateTagAndCustomer: true,
       });
 
-      console.log("dupicate", respose);
+      //console.log("dupicate", respose);
 
       fetchCustomTemplates();
     } catch (err) {
-      console.error(err);
+      //console.error(err);
     }
   };
 

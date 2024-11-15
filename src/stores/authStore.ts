@@ -24,7 +24,7 @@ const useAuthStore = create<AuthState>()(
             set({ isLoggedIn: true });
           }
         } catch (error) {
-          console.error("토큰 재발급 실패:", error);
+          //console.error("토큰 재발급 실패:", error);
           set({ isLoggedIn: false });
         }
       },

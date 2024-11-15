@@ -33,7 +33,7 @@ export default function Header({ title, showBackIcon = false }: HeaderProps) {
       await postLogoutAPI({ token });
       Logout();
     } catch (error) {
-      console.error("로그아웃 실패:", error);
+      //console.error("로그아웃 실패:", error);
     }
     router.push("/");
   };

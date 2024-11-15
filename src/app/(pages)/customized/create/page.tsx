@@ -73,7 +73,7 @@ export default function CustomizedNewPage() {
         router.push("/customized");
       }
     } catch (error) {
-      console.error("저장 중 오류 발생:", error);
+      //console.error("저장 중 오류 발생:", error);
     }
   };
 
