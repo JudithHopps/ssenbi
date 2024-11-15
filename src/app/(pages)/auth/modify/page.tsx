@@ -50,7 +50,7 @@ export default function ModifyPage() {
         setPersonalPhoneNumber(response?.result?.personalPhoneNumber);
         setBusinessPhoneNumber(response?.result?.businessPhoneNumber);
       } catch (error) {
-        console.error("get Member API 실패", error);
+        //console.error("get Member API 실패", error);
       }
     };
 
@@ -132,9 +132,9 @@ export default function ModifyPage() {
 
   const handleError = (error: unknown) => {
     if (error instanceof Error) {
-      console.error("회원정보 수정 실패:", error.message);
+      //console.error("회원정보 수정 실패:", error.message);
     } else {
-      console.error("회원정보 수정 실패: 알 수 없는 오류 발생");
+      //console.error("회원정보 수정 실패: 알 수 없는 오류 발생");
     }
     alert("회원정보 수정 과정 중 에러가 발생하였습니다!");
   };

@@ -37,7 +37,7 @@ export default function CustomizedListSelector({
           token,
           sort: SORTOPTIONS[curSortOption],
         });
-        console.log("customized data", data);
+        //console.log("customized data", data);
         setFilteredMessages(data.result);
       } finally {
         setIsLoading(false);

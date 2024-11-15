@@ -88,7 +88,7 @@ export default function ChatAIContainer({
           : {}),
       });
 
-      console.log("chatResponse", chatResponse);
+      //console.log("chatResponse", chatResponse);
 
       const aiResponse: MessageType = {
         sender: SenderType.AI,
@@ -97,7 +97,7 @@ export default function ChatAIContainer({
       };
       setMessages((prevMessages) => [...prevMessages, aiResponse]);
     } catch (err) {
-      console.error(err);
+      //console.error(err);
       alert("ai 응답 과정 중 에러가 발생하였습니다. 관리자에게 문의해주세요");
     }
   };

@@ -55,14 +55,14 @@ function MessageCreateContent() {
 
       const data = await getCustomTemplateAPI({ token, templateId });
 
-      console.log(data);
+      //console.log(data);
 
       const { templateContent, templateCustomers, templateTags } = data.result;
       setCustomers(templateCustomers);
       setContent(templateContent);
       setTags(templateTags);
     } catch (error) {
-      console.error("Error fetching message:", error);
+      //console.error("Error fetching message:", error);
     }
   };
 
@@ -75,13 +75,13 @@ function MessageCreateContent() {
         ...(id ? { customTemplateId: id } : {}),
       };
 
-      console.log("Sending message data:", messageData);
+      //console.log("Sending message data:", messageData);
       const response = await postSendMessageAPI(messageData);
-      console.log("Post response:", response);
+      //console.log("Post response:", response);
       setIsSaveMessageVisible(true);
       setTimeout(() => setIsSaveMessageVisible(false), 3000);
     } catch (err) {
-      console.error("Error sending message:", err);
+      //console.error("Error sending message:", err);
     }
   }, 1500);
 

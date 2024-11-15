@@ -43,7 +43,7 @@ export default function CustomerTagList({
 
         setAllCustomers(result);
       } catch (error) {
-        console.error("고객 데이터를 가져오는 중 오류가 발생했습니다: ", error);
+        //console.error("고객 데이터를 가져오는 중 오류가 발생했습니다: ", error);
       }
     };
     fetchCustomers();
@@ -92,7 +92,7 @@ export default function CustomerTagList({
           ),
         );
       } catch (error) {
-        console.error("고객 수정 중 오류가 발생했습니다: ", error);
+        //console.error("고객 수정 중 오류가 발생했습니다: ", error);
       }
     };
 
@@ -116,7 +116,7 @@ export default function CustomerTagList({
         allCustomers.filter((item) => item.customerId !== customerId),
       );
     } catch (error) {
-      console.error("고객 삭제 중 오류가 발생했습니다: ", error);
+      //console.error("고객 삭제 중 오류가 발생했습니다: ", error);
     }
   };
 

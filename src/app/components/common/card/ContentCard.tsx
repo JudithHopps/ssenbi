@@ -40,7 +40,7 @@ export default function ContentCard({
 
       if (response?.code === "S10000") router.push("/customized");
     } catch (error) {
-      console.error("post duplicate API 실패", error);
+      //console.error("post duplicate API 실패", error);
     }
   };
 

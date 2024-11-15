@@ -35,7 +35,7 @@ export default function TemplateClientButtons({
         setIsTooltipVisible(false);
       }, 1500);
     } catch (err) {
-      console.error(err);
+      //console.error(err);
     }
   };
 
@@ -50,7 +50,7 @@ export default function TemplateClientButtons({
 
       if (response?.code === "S10000") router.push("/customized");
     } catch (error) {
-      console.error("post duplicate API 실패", error);
+      //console.error("post duplicate API 실패", error);
     }
   };
 

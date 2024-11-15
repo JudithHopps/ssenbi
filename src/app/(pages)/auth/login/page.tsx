@@ -26,9 +26,9 @@ export default function LoginPage() {
     } catch (error) {
       alert("로그인 과정 중 문제가 발생했습니다. 관리자에게 문의해주세요");
       if (error instanceof Error) {
-        console.error("로그인 실패: ", error.message);
+        //console.error("로그인 실패: ", error.message);
       } else {
-        console.error("로그인 실패: 알 수 없는 오류 발생");
+        //console.error("로그인 실패: 알 수 없는 오류 발생");
       }
     }
   };
