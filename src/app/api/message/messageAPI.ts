@@ -47,9 +47,6 @@ export const postSendMessageAPI = async (
     );
     return;
   }
-
-  const response = await axiosInstance.post(`message`, messagePostprops);
-  return response.data;
 };
 
 // 고객 통계
