@@ -151,7 +151,7 @@ export default function TagList({
             {isEmpty && (
               <li className="body-small empty-tags">
                 {" "}
-                태그 {isFilter ? "필터" : "추가"}
+                그룹 {isFilter ? "필터" : "추가"}
               </li>
             )}
             {tags.slice(0, maxTagCount).map((tag) => (
@@ -194,7 +194,7 @@ export default function TagList({
                 <input
                   type="text"
                   ref={inputRef}
-                  placeholder="태그 추가"
+                  placeholder="그룹 추가"
                   onKeyDown={handleKeyDown}
                   maxLength={25}
                 />
